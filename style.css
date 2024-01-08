@@ -1,0 +1,495 @@
+/* ---- Fonts ----- */
+/*
+ font-family: 'Sofia Sans', sans-serif;
+ font-family: 'Josefin Sans', sans-serif;
+*/
+
+/* ---- Colors ----- */
+/*
+dark-colors: #FFB703, #D62828,  #000000, #ffd500;
+light-colors: #FFFFFF,  #e0e1dd, #F6F6F6;
+*/
+/* ---- Layout----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    background: white;
+    line-height: 1.5;
+    color: black;
+    font-size: 24px;
+}
+
+html ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: #FFB703;
+    border-radius: 10px;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* ---- Nav-bar----- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+
+.nav-items li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+}
+
+.nav-items li a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-items li a:hover {
+    color: #FFB703;
+}
+
+.btn {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 16px;
+    padding: 8px 20px;
+    background-color: #FFB703;
+    border: none;
+    color: #f6f6f6;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    background-color: #D62828;
+}
+
+/* ---- Home-Section----- */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 8% 80px;
+}
+
+.home-content {
+    flex: 2 1 100px;
+}
+
+.home .home-img {
+    flex: 1 1 150px;
+}
+
+.home .home-img img {
+    width: 100%;
+}
+
+.title {
+    padding-bottom: 20px;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+.description {
+    padding: 0px 180px 20px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.home-content h1 span {
+    color: #FFB703;
+    text-shadow: 0px 1px 1px black;
+}
+
+.btn.one {
+    padding: 15px 40px;
+}
+
+/* ---- Speciality-Section----- */
+
+.speciality {
+    width: 100%;
+    height: 50vh;
+}
+
+.slider {
+    display: block;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.slider>* {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 90%;
+    animation: slide 12s infinite;
+}
+
+.slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(./images/taste1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(2) {
+    left: 100%;
+    animation-delay: 2s;
+    background-image: url(./images/taste2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(3) {
+    left: 100%;
+    animation-delay: 5s;
+    background-image: url(./images/davide-cantelli-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(4) {
+    left: 100%;
+    animation-delay: 8s;
+    background-image: url(./images/lily-banse--unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide p {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@keyframes slide {
+    0% {
+        left: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+
+    5% {
+        left: 0%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    30% {
+        left: -100%;
+        width: 100%;
+        opacity: 1;
+    }
+
+    30.0001% {
+        left: -100%;
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 100%;
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+
+/* ---- Menu-Section----- */
+
+.menu {
+    padding: 230px 120px 0px;
+}
+
+.main-text {
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+    padding-top: 10px;
+}
+
+.main-text h2::first-letter {
+    color: #D62828;
+}
+
+/* h3:hover::first-letter {
+    background-color:#FFB703;
+} */
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+    max-width: 90%;
+    margin: 0 auto;
+    column-gap: 50px;
+
+}
+
+.card {
+    max-width: 25%;
+    padding: 0 0px;
+    background-color: white;
+    color: #2c2727;
+    border-radius: 15px;
+    margin: 10px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 300px;
+    height: 300px
+}
+
+.card-body {
+    padding: 0 0px;
+    text-align: center;
+}
+
+.card-body h3 {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+}
+
+.menubtn.btn {
+    padding: 8px;
+}
+
+/* ---- Review-Section----- */
+
+.reviews {
+    padding: 100px 8% 0px;
+}
+
+.review-cards {
+    padding: 90px;
+    display: flex;
+    text-align: center;
+    width: auto;
+    margin-top: 0;
+
+}
+
+.review-cards .review {
+    background: #e9ecef;
+    margin: 30px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 25px;
+    line-height: 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-cards .review p {
+
+    letter-spacing: -0.01em;
+    margin: 12px 0;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.review-cards .review .user-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+.main-text h2 span {
+    color: #D62828;
+}
+
+.rating span {
+    margin: 5px 0px;
+    color: #ffd500;
+}
+
+.review h3 {
+    padding: 10px;
+}
+
+/* ---- Order-Section----- */
+
+.order {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.order-text {
+    width: 50%;
+    margin: 120px 0px 120px 120px;
+}
+
+.service .btn {
+    padding: 14px 12px;
+}
+
+.service a {
+    margin: 10px;
+}
+
+.row {
+    width: 25%;
+}
+
+.order-text h2 {
+    padding-bottom: 5px;
+}
+
+.order-text h2 span {
+    color: #D62828;
+}
+
+.order-text p {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    font-size: 24px;
+    padding: 0px 40px 20px 0px;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="number"] {
+    font-family: 'Sofia Sans', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    font-family: 'Sofia Sans', sans-serif;
+    background-color: #FFB703;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFB703;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #FFB703;
+    background-color: #e6e8ec;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #FFB703;
+    background-color: #e6e8ec;
+}
+
+/* ---- Footer-Section----- */
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.col-1 ul {
+    font-size: 20px;
+}
+
+.col-2 ul {
+    font-size: 20px;
+    font-weight: 600;
+}
+.col-3 img {
+    width: 30px;
+    height: auto;
+    margin: 0px 5px;
+    border-radius: 10px;
+}
