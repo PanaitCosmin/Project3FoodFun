@@ -24,7 +24,7 @@ body {
     background: white;
     line-height: 1.5;
     color: black;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 html ::-webkit-scrollbar-track {
@@ -45,12 +45,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 80px;
+    padding: 0.6rem 5rem;
 }
 
 .nav-items li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 1.2rem;
 }
 
 .logo {
@@ -99,11 +99,11 @@ header {
 }
 
 .home-content {
-    flex: 2 1 100px;
+    flex: 2 1 6.25rem;
 }
 
 .home .home-img {
-    flex: 1 1 150px;
+    flex: 1 1 9.2rem;
 }
 
 .home .home-img img {
@@ -189,7 +189,7 @@ header {
 .slide p {
     position: relative;
     font-family: 'Sofia Sans', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     display: block;
     width: 100%;
@@ -199,7 +199,6 @@ header {
     padding: 20px;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
-
 
 @keyframes slide {
     0% {
@@ -262,7 +261,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 40px 0;
+    padding: 2.5rem 0px;
     max-width: 90%;
     margin: 0 auto;
     column-gap: 50px;
@@ -270,7 +269,6 @@ header {
 
 .card {
     max-width: 25%;
-    padding: 0 0px;
     background-color: white;
     color: #2c2727;
     border-radius: 15px;
@@ -317,7 +315,7 @@ header {
 }
 
 .review-cards {
-    padding: 90px;
+    padding: 5.625rem;
     display: flex;
     text-align: center;
     width: auto;
@@ -328,8 +326,8 @@ header {
 .review-cards .review {
     background: #e9ecef;
     margin: 30px;
-    margin-bottom: 50px;
-    width: 300px;
+    margin-bottom: 3rem;
+    width: 18.75em;
     padding: 25px;
     line-height: 20px;
     position: relative;
@@ -339,7 +337,7 @@ header {
 .review-cards .review p {
 
     letter-spacing: -0.01em;
-    margin: 12px 0;
+    margin: 12px 0px;
     line-height: 1;
     font-size: 18px;
 }
@@ -374,7 +372,7 @@ header {
 
 .order-text {
     width: 50%;
-    margin: 120px 0px 120px 120px;
+    margin: 7.5em 0px 7.5em 7.5em;
 }
 
 .service .btn {
@@ -410,7 +408,7 @@ form {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 400px;
+    width: 25em;
 }
 
 label {
@@ -475,6 +473,12 @@ textarea:focus {
     column-gap: 50px;
 }
 
+.flogo {
+    margin-left: 45%;
+    width: 200px;
+    height: 70px;
+}
+
 .col-3 {
     display: flex;
     justify-content: space-around;
@@ -499,5 +503,5 @@ textarea:focus {
     width: 30px;
     height: auto;
     margin: 0px 5px;
-    border-radius: ;
+    border-radius: 10px;
 }
